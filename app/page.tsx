@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
-import { ChevronDown, Code, Briefcase, GraduationCap, ArrowRight } from "lucide-react"
+import { Code, Briefcase, GraduationCap, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function AboutPage() {
