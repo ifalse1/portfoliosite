@@ -51,17 +51,17 @@ export default function AboutPage() {
             />
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl font-bold mb-6">Hello, I'm Benson</h2>
+            <h2 className="text-3xl font-bold mb-6">Hello, I&apos;m Benson</h2>
             <p className="text-muted-foreground mb-4">
-              I'm a Computer Science student based in Utah State University with 33 years of experience creating digital solutions
+              I&apos;m a Computer Science student based in Utah State University with 33 years of experience creating digital solutions
               that combine functionality with aesthetic appeal.
             </p>
             <p className="text-muted-foreground mb-4">
-              My journey in tech began when I started. Since then, I've been passionate
+              My journey in tech began when I started. Since then, I&apos;ve been passionate
               about doing it.
             </p>
             <p className="text-muted-foreground">
-              When I'm not coding, you can find me doing nothing.
+              When I&apos;m not coding, you can find me doing nothing.
             </p>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function AboutPage() {
             <div className="bg-background border rounded-lg p-8 text-center shadow-sm">
               <h3 className="text-2xl font-semibold mb-4">View My Projects</h3>
               <p className="text-muted-foreground mb-6">
-                Explore my portfolio of projects to see examples of my work and the technologies I've used.
+                Explore my portfolio of projects to see examples of my work and the technologies I&apos;ve used.
               </p>
               <Link
                 href="/projects"
@@ -173,7 +173,7 @@ export default function AboutPage() {
             <div className="bg-background border rounded-lg p-8 text-center shadow-sm">
               <h3 className="text-2xl font-semibold mb-4">Work Experience</h3>
               <p className="text-muted-foreground mb-6">
-                Learn more about my professional background and the companies I've worked with throughout my career.
+                Learn more about my professional background and the companies I&apos;ve worked with throughout my career.
               </p>
               <Link
                 href="/jobs"

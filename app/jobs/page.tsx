@@ -88,7 +88,7 @@ export default function JobsPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">Work Experience</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and the companies I've had the privilege to work with.
+            My professional journey and the companies I&apos;ve had the privilege to work with.
           </p>
         </div>
 
