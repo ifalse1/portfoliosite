@@ -4,8 +4,23 @@ import { notFound } from "next/navigation"
 import { ArrowLeft, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+interface Job {
+  id: number
+  slug: string
+  title: string
+  company: string
+  logo: string
+  description: string
+  startDate: string
+  endDate: string
+}
+
+interface JobPageProps {
+  params: { slug: string }
+}
+
 // Sample job data
-const jobs = [
+const jobs: Job[] = [
   {
     id: 1,
     slug: "senior-developer-tech-innovations",
@@ -63,7 +78,7 @@ const jobs = [
   },
 ]
 
-export default function JobPage({ params }: { params: { slug: string } }) {
+export default function JobPage({ params }: JobPageProps) {
   const job = jobs.find((j) => j.slug === params.slug)
 
   if (!job) {
