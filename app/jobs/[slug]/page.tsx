@@ -74,8 +74,11 @@ const jobs: Job[] = [
   },
 ]
 
-export default function JobPage({ params }: { params: { slug: string } }) {
-  const job = jobs.find((j) => j.slug === params.slug)
+export default async function JobPage({ params }: { params: { slug: string } }) {
+  // Await the params object
+  const { slug } = await params
+
+  const job = jobs.find((j) => j.slug === slug)
 
   if (!job) {
     notFound()
@@ -138,4 +141,3 @@ export default function JobPage({ params }: { params: { slug: string } }) {
     </div>
   )
 }
-
