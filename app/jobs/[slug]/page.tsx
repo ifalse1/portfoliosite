@@ -4,19 +4,8 @@ import { notFound } from "next/navigation"
 import { ArrowLeft, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-interface Job {
-  id: number
-  slug: string
-  title: string
-  company: string
-  logo: string
-  description: string
-  startDate: string
-  endDate: string
-}
-
 // Sample job data
-const jobs: Job[] = [
+const jobs = [
   {
     id: 1,
     slug: "senior-developer-tech-innovations",
@@ -74,11 +63,8 @@ const jobs: Job[] = [
   },
 ]
 
-export default async function JobPage({ params }: { params: { slug: string } }) {
-  // Await the params object
-  const { slug } = await params
-
-  const job = jobs.find((j) => j.slug === slug)
+export default function JobPage({ params }: { params: { slug: string } }) {
+  const job = jobs.find((j) => j.slug === params.slug)
 
   if (!job) {
     notFound()
@@ -93,7 +79,7 @@ export default async function JobPage({ params }: { params: { slug: string } }) 
             Back to Work Experience
           </Link>
 
-          <Link href="/" className="inline-flex items-center text-muted-foreground hover:text-foreground">
+          <Link href="/about" className="inline-flex items-center text-muted-foreground hover:text-foreground">
             <Home className="mr-2 h-4 w-4" />
             Back to About
           </Link>
@@ -131,7 +117,7 @@ export default async function JobPage({ params }: { params: { slug: string } }) 
           </Button>
 
           <Button asChild variant="outline">
-            <Link href="/" className="inline-flex items-center">
+            <Link href="/about" className="inline-flex items-center">
               <Home className="mr-2 h-4 w-4" />
               Back to About
             </Link>

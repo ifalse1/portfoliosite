@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
-import { Code, Briefcase, GraduationCap, ArrowRight } from "lucide-react"
+import { ChevronDown, Code, Briefcase, GraduationCap, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function AboutPage() {
@@ -37,6 +37,9 @@ export default function AboutPage() {
             Developer, designer, and creative problem solver passionate about building exceptional digital experiences.
           </p>
         </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce">
+          <ChevronDown size={32} />
+        </div>
       </div>
 
       {/* Bio section */}
@@ -51,17 +54,17 @@ export default function AboutPage() {
             />
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl font-bold mb-6">Hello, I&apos;m Benson</h2>
+            <h2 className="text-3xl font-bold mb-6">Hello, I'm [Your Name]</h2>
             <p className="text-muted-foreground mb-4">
-              I&apos;m a Computer Science student based in Utah State University with 33 years of experience creating digital solutions
+              I'm a [Your Profession] based in [Your Location] with [X] years of experience creating digital solutions
               that combine functionality with aesthetic appeal.
             </p>
             <p className="text-muted-foreground mb-4">
-              My journey in tech began when I started. Since then, I&apos;ve been passionate
-              about doing it.
+              My journey in tech began when [brief story about how you got started]. Since then, I've been passionate
+              about [what drives you in your work].
             </p>
             <p className="text-muted-foreground">
-              When I&apos;m not coding, you can find me doing nothing.
+              When I'm not coding, you can find me [your hobbies or interests outside of work].
             </p>
           </div>
         </div>
@@ -72,7 +75,7 @@ export default function AboutPage() {
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('/colors.jpg')",
+            backgroundImage: "url('/colors.jpg",
             backgroundAttachment: "fixed",
           }}
         />
@@ -129,12 +132,12 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Education</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-background p-6 rounded-lg shadow-md">
-              <p className="text-sm text-muted-foreground">2021 - 2025</p>
+              <p className="text-sm text-muted-foreground">2012 - 2016</p>
               <h3 className="text-xl font-semibold mt-1">Bachelor of Science in Computer Science</h3>
-              <p className="mt-2">Utah State University</p>
+              <p className="mt-2">University Name</p>
               <p className="text-muted-foreground mt-2">
                 Relevant coursework: Web Development, Data Structures, Algorithms, Database Systems, User Interface
-                Design, Machine Learning
+                Design
               </p>
             </div>
             <div className="bg-background p-6 rounded-lg shadow-md">
@@ -159,7 +162,7 @@ export default function AboutPage() {
             <div className="bg-background border rounded-lg p-8 text-center shadow-sm">
               <h3 className="text-2xl font-semibold mb-4">View My Projects</h3>
               <p className="text-muted-foreground mb-6">
-                Explore my portfolio of projects to see examples of my work and the technologies I&apos;ve used.
+                Explore my portfolio of projects to see examples of my work and the technologies I've used.
               </p>
               <Link
                 href="/projects"
@@ -173,7 +176,7 @@ export default function AboutPage() {
             <div className="bg-background border rounded-lg p-8 text-center shadow-sm">
               <h3 className="text-2xl font-semibold mb-4">Work Experience</h3>
               <p className="text-muted-foreground mb-6">
-                Learn more about my professional background and the companies I&apos;ve worked with throughout my career.
+                Learn more about my professional background and the companies I've worked with throughout my career.
               </p>
               <Link
                 href="/jobs"
@@ -189,4 +192,3 @@ export default function AboutPage() {
     </div>
   )
 }
-

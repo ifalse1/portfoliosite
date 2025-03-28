@@ -76,7 +76,7 @@ export default function JobsPage() {
       {/* Navigation */}
       <div className="max-w-5xl mx-auto mb-8">
         <Link
-          href="/"
+          href="/about"
           className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
@@ -88,7 +88,7 @@ export default function JobsPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">Work Experience</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and the companies I&apos;ve had the privilege to work with.
+            My professional journey and the companies I've had the privilege to work with.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export default function JobsPage() {
         {/* Footer navigation */}
         <div className="mt-16 text-center">
           <Link
-            href="/"
+            href="/about"
             className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground shadow-sm hover:bg-primary/90 transition-colors"
           >
             <Home className="mr-2 h-5 w-5" />
@@ -148,4 +148,3 @@ export default function JobsPage() {
     </div>
   )
 }
-
