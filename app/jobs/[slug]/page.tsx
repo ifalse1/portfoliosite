@@ -15,10 +15,6 @@ interface Job {
   endDate: string
 }
 
-interface JobPageProps {
-  params: { slug: string }
-}
-
 // Sample job data
 const jobs: Job[] = [
   {
@@ -78,7 +74,7 @@ const jobs: Job[] = [
   },
 ]
 
-export default function JobPage({ params }: JobPageProps) {
+export default function JobPage({ params }: { params: { slug: string } }) {
   const job = jobs.find((j) => j.slug === params.slug)
 
   if (!job) {
